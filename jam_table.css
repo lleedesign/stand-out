@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* ––––––– TABLE ––––––– */
+
+
+table.agenda {
+    border-style: hidden;
+    border-collapse: collapse;
+    font-size: 1em;
+    margin: 2em auto 3em auto;
+    width: 75%;
+    max-width: 1100px;
+    font-family: sans-serif;
+ }
+ 
+ table.agenda th, 
+ table.agenda td {
+    border: 1px solid gray;
+    padding: 10px;
+    vertical-align: top;
+ }
+ 
+ table.agenda thead {
+    background-color: #F89422;
+    color: white;
+ }
+ 
+ table.agenda thead tr {
+    height: 30px;
+ }
+ 
+ table.agenda tbody tr {
+    height: 50px;
+ }
+ 
+ table.agenda caption {
+    caption-side: bottom;
+    /* text-align: left; */
+    color: gray;
+    font-style: italic;
+    padding-top: .75em;
+ }
+ 
+ col#firstCol {
+    width: 20%
+ }
+ 
+ col.eventCols {
+    width: 20%
+ }
+ 
+ table.agenda p {
+    font-size: small;
+    color: gray;
+ }
+ 

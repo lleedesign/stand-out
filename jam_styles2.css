@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+
+/* ––––––– HEADER ––––––– */
+
+header {
+   background-color: white;
+}
+
+
+/* ––––––– EXCURSIONS ––––––– */
+
+
+h1 {
+   font-size: 2em;
+   text-transform: uppercase;
+   text-align: center;
+   padding-top: 1em;
+   letter-spacing: 1px;
+   color:  #F89422;
+}
+
+section {
+   display: inline-block;
+   text-align: center;
+}
+
+section:first-of-type {
+   margin-top: 2em;
+}
+
+.info {
+   margin: auto;
+   width: 75%;
+   max-width: 1100px;
+   font-family: sans-serif;
+   line-height: 1.75em;
+}
+
+
+.heading {
+   font-size: 1.5em;
+   padding-bottom: 0.25em;
+}
+
+.excurimg {
+   width: 300px;
+   margin-right: 1.5em;
+   display: inline-block;
+   vertical-align: top;
+
+}
+
+.excurtext{
+   text-align: left;
+   width: 55%;
+   display: inline-block;
+}
+
+.section-space {
+   padding-top: 4em;
+}
+
+.section-space:last-of-type {
+   padding-bottom: 4em;
+}
+
+

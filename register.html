@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Jamaica, trip, Caribbean, register, registration" />
+    <title>Register</title>
+    <link href="jam_reset.css" rel="stylesheet" />
+    <link href="jam_nav.css" rel="stylesheet" />
+    <link href="jam_styles2.css" rel="stylesheet" />
+    <link href="jam_form.css" rel="stylesheet" />
+    <link href="favicon.png" rel="icon" type="image/x-icon" />
+    <script src="jam_script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav> 
+            <img src="jam_logo.png" class="headerlogo" alt="Stand Out Logo" />      
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excursions.html">Excursions</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav> 
+        <img src="img_register_crop.jpg"  alt="aerial hotel photo" />
+    </header>
+
+    <div class="info" id="registerNow">
+        <h1>Register Now!</h1>
+    </div>
+
+   <form id="reg" class="regform" method="post"> 
+
+         <div class="formRow">
+            <input name="firstname" id="firstname" class="leftcol" type="text" placeholder="First Name" autofocus tabindex="1" required />
+            <input name="lastname" id="lastname" class="rightcol" type="text" placeholder="Last Name" tabindex="2" required />
+         </div>
+
+         <div class="formRow">
+            <input name="phone" id="phone" type="tel" placeholder="Phone (xxx) xxx-xxxx" tabindex="4" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+         </div>
+
+         <div class="formRow">
+            <input name="email" id="email" type="email" placeholder="Email" tabindex="5" required />
+         </div>
+
+         <div id="guestCB">
+            <input name="bringguest" id="guestCheckBox" type="checkbox" value="yes" tabindex="6"/>
+            <label for="guestCheckBox">Yes, I am bringing a Guest</label>
+         </div>
+                  
+         <div class="formRow">
+            <input name="guestfirstname" id="guestfirstname" class="leftcol" type="text" placeholder="Guest First Name" tabindex="7"/>
+            <input name="guestlastname" id="guestlastname" class="rightcol" type="text" placeholder="Guest Last Name" tabindex="8" />
+         </div>
+
+         <div class="buttonContainer">
+            <input value="Submit" onclick="onSubmitClick()" type="submit" id="submit"  tabindex="10"/>
+         </div>
+
+         <div class="buttonContainer">
+            <input value="Reset" type="reset" id="reset"  tabindex="9"/>
+         </div>
+
+   </form>
+    
+    <footer>
+       <address>
+          Stand Out &#183; 
+          Travel Headquarters, St. Louis, MO &#183;
+          (555) 555-5555 <br />
+          <a href="mailto:llee139@my.stlcc.edu">jamaica2020@stand-out.com</a>
+       </address>
+    </footer>
+ </body>
+
+</html>
