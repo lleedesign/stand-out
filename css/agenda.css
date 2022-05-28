@@ -1,0 +1,106 @@
+
+.banner {
+    /* background-image: url('../img/img_jamaica2_crop.jpg'); */
+    /* background-size: cover; */
+    height: 600px;
+    padding: 0px;
+    position: relative
+}
+
+.banner-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.banner-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.banner-caption a {
+    color: rgba(255, 255, 255, 0.8); 
+}
+.banner-caption a:hover {
+    color: white;
+}
+
+
+/* ----------- Accordion ------------ */
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:hover,
+.accordion-button:not(.collapsed) {
+    /* color: #515862; */
+    background-color: unset;
+    border: unset;
+    box-shadow: unset;
+}
+
+.accordion-button:not(.collapsed) {
+    font-size: 2rem;
+    /* color: #515862; */
+    color: #ffc107;
+    /* text-decoration: underline; */
+}
+
+.accordion-button {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #CE0E2D;
+    /* color: #515862; */
+}
+
+.accordion-button:hover {
+    color: orange;
+}
+
+/* changes accordiion arrow to red #CE0E2D */
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23CE0E2D'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  }
+
+/* ------------------------------------------------------------- */
+/* .accordion-button {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .accordion-button:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .accordion-button:hover {
+   background-position: 0;
+  }
+  
+  .accordion-button:hover::before {
+    width:100%;
+  } */
+  /* ------------------------------------------------------------- */
+
+/* https://css-tricks.com/css-link-hover-effects/ */
+/* https://css-tricks.com/cool-hover-effects-that-use-css-text-shadow/ */

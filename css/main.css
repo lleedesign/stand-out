@@ -1,0 +1,68 @@
+
+.navbar {
+    background-color: #CE0E2D;
+}
+
+.nav-top a {
+    font-size: x-large;
+    text-transform: uppercase;
+    padding-left: 2rem !important;
+    font-family: 'Viga', sans-serif;
+}
+
+.nav-top a:hover {
+    color: #ffc107 !important;
+}
+
+.nav-top button {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.nav-top button:hover {
+    color: #CE0E2D;
+}
+
+.headerlogo {
+    width: 300px;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    transition: 1s ease;
+}
+ 
+.headerlogo:hover {
+    width: 400px;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    transform: rotate(-13deg);
+}
+
+.figure-caption a {
+    color: gray !important;
+}
+.figure-caption a:hover {
+    color: black !important;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Viga', sans-serif;
+}
+
+h2, h3, h4, a:hover {
+    color: #CE0E2D;
+}
+
+
+a {
+    text-decoration: none !important;
+    color: gray;
+}
+
+.footer-col-header, .footer-col-header a {
+    letter-spacing: 1.5px;
+    color: #CE0E2D;
+}
+

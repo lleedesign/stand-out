@@ -1,164 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Agenda in Jamaica</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Jamaica, trip, Caribbean, agenda" />
-    <title>Agenda</title>
-    <link href="jam_reset.css" rel="stylesheet" />
-    <link href="jam_nav.css" rel="stylesheet" />
-    <link href="jam_styles2.css" rel="stylesheet" />
-    <link href="jam_table.css" rel="stylesheet" />
-    <link href="favicon.png" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awesome (for icons) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/agenda.css">
+
+    <link href="img/favicon.png" rel="icon" type="image/x-icon" />
 </head>
 
-<body>
-    <header>
-        <nav> 
-            <img src="jam_logo.png" class="headerlogo" alt="Stand Out Logo" />      
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="excursions.html">Excursions</a></li>
-                <li><a href="agenda.html">Agenda</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav> 
-        <img src="img_agenda_crop.jpg"  alt="beads from Jamaican market" />
-    </header>
+<body id="agenda" data-spy="scroll" data-target=".navbar" data-offset="100">
 
-    <div class="info">
-        <h1>Agenda</h1>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- TODO: link logo to top of page -->
+            <!-- TODO: make logo smaller when scrolling -->
+            <!-- TODO: move logo with left edge of body -->
+            <img src="img/jam_logo.png" class="headerlogo " alt="Stand Out Logo" />
+
+            <a class="navbar-brand" href="#"></a>
+            <!-- TODO: hamburger nav right justified -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end m-4" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav-top">
+                <!-- TODO: add fun nav hover effect -->
+                <a class="nav-item nav-link " href="index.html">Home</a>
+                <a class="nav-item nav-link " href="excursions.html">Excursions</a>
+                <a class="nav-item nav-link " href="#agenda">Agenda</a>
+                <a href="register.html"><button type="button" class="btn btn-outline-light btn-lg" >Register</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- jumbotron -->
+    <div class="container-fluid banner">
+        <img class="img-fluid banner-image" src="img/beads.jpg"  alt="beads from Jamaican market" />
+        <figcaption class="banner-caption"><small>Photo by <a href="https://www.gettyimages.com/detail/photo/jewelry-compilation-royalty-free-image/178379981">mimialanjo</a> on <a href="https://www.gettyimages.com/detail/photo/jewelry-compilation-royalty-free-image/178379981">Getty Images</a></small></figcaption>
     </div>
 
+    <div class="container mb-5">
+        <h1 class="text-uppercase pb-3 text-center text-warning mt-4">Your Agenda in Jamaica</h1>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
 
-    <table class="agenda">
-        <caption>Hospitality Desk is open every day in main lobby</caption>
-        <colgroup>
-            <col id="firstCol" />
-            <col class="eventCols" span="3"/>
-        </colgroup>
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Morning</th>
-                <th>Afternoon</th>
-                <th>Evening</th>
-            </tr>
-        </thead>
+            <!-- day 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Wednesday, January 22
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" >
+                    <div class="accordion-body">
+                        <div class="row align-items-start">
+                            <div class="col-lg order-1">
+                                <h4>Morning</h4>
+                                <h5>Resort Check-In</h5>
+                                <p>When you reach the resort, you'll be escorted to St. James Ballroom. The Travel Directors will help you reconfirm your activity selections, make your dine-around, and give you your name badge.</p>
+                            </div>
+                            <div class="col-lg order-2">
+                                <h4>Afternoon</h4>
+                                <h5>Afternoon at Leisure</h5>
+                                <p>The rest of the afternoon is yours to unpack, relax, and explore your new surroundings.</p>
+                            </div>
+                            <div class="col-lg order-3">
+                                <h4>Evening</h4>
+                                <h5>Welcome Reception</h5>
+                                <p>Celebrate your arrival in Montego Bay as your meet up with your fellow attendees for cocktails at the resort's Barracuda Beach Bar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <tbody>
-            <tr>
-                <th>Wednesday,<br />January 22</th>
-                
-                <td>
-                    <h3>Resort Check-In</h3>
-                    <p>
-                        When you reach the resort, you'll be escorted to <em>St. James Ballroom</em>. 
-                        The Travel Directors will help you reconfirm your activity selections, make your dine-around,
-                        and give you your name badge.
-                    </p>
-                </td>
-                <td>
-                    <h3>Afternoon at Leisure</h3>
-                    <p>
-                        The rest of the afternoon is yours to unpack, relax, and explore your new surroundings.
-                    </p>
-                </td>
-                <td>
-                    <h3>Welcome Reception</h3>
-                    <p>
-                        Celebrate your arrival in Montego Bay as your meet up with your fellow attendees for cocktails
-                        at the resort's <em>Barracuda Beach Bar</em>.
-                    </p>
-                </td>
-            </tr>
+            <!-- day 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Thursday, January 23
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" >
+                    <div class="accordion-body">
+                        <div class="row align-items-start">
+                            <div class="col-lg order-1">
+                                <h4>Morning</h4>
+                                <h5>Breakfast</h5>
+                                <p>Start your morning with breakfast delivered to your room or stop by World Cafe or Coco Cafe for tasty breakfast favorites.</p>
+                            </div>
+                            <div class="col-lg order-2">
+                                <h4>Afternoon</h4>
+                                <h5>Full Day of Leisure / Sponsored Activity</h5>
+                                <p>Dive into the fun with a pre-selected activity, for detailed information on departure times and activities, please check in with the Travel Directors at the Hospitality Desk.</p>
+                            </div>
+                            <div class="col-lg order-3">
+                                <h4>Evening</h4>
+                                <h5>Dine Arounds in the Resort</h5>
+                                <p>Dive into the fun with a pre-selected activity, for detailed information on departure times and activities, please check in with the Travel Directors at the Hospitality Desk.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <tr>
-                <th>Thursday,<br />January 23</th>
-                <td>
-                    <h3>Breakast</h3>
-                    <p>
-                        Start your morning with breakfast delivered to your room or stop by <em>World Cafe</em> or
-                        <em>Coco Cafe</em> for tasty breakfast favorites.
-                    </p>
-                </td>
-                <td>
-                    <h3>Full Day of Leisure<br />or Sponsored Activity</h3>
-                    <p>
-                        Dive into the fun with a pre-selected activity, for detailed information on departure times and activities, 
-                        please check in with the Travel Directors at the Hospitality Desk.
-                    </p>
-                </td>
-                <td>
-                    <h3>Dine Arounds in the Resort</h3>
-                    <p>
-                        Join fellow winners and Hosts for Dinner at the resort this evening.
-                        Dine-around selections will be available upon check-in at the Hospitality Desk.
-                    </p>
-                </td>
-            </tr>
+            <!-- day 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Friday, January 24
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" >
+                    <div class="accordion-body">
+                        <div class="row align-items-start">
+                            <div class="col-lg order-1">
+                                <h4>Morning</h4>
+                                <h5>Breakfast</h5>
+                                <p>Dine-in or room service is available.</p>
+                            </div>
+                            <div class="col-lg order-2">
+                                <h4>Afternoon</h4>
+                                <h5>Full Day of Leisure / Sponsored Activity</h5>
+                                <p>Dive into the fun with a pre-selected activity, for detailed information on departure times and activities, please check in with the Travel Directors at the Hospitality Desk.</p>
+                            </div>
+                            <div class="col-lg order-3">
+                                <h4>Evening</h4>
+                                <h5>Farewell Reception and Dinner</h5>
+                                <p>Join friends, old and new, as we gather near the Gazebo on Barefoot Beach for a fun Farewell Reception.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <tr>
-                <th>Friday,<br />January 24</th>
-                <td>
-                    <h3>Breakast</h3>
-                    <p>
-                        Dine-in or room service is available.
-                    </p>
-                </td>
-                <td>
-                    <h3>Full Day of Leisure<br />or Sponsored Activity</h3>
-                    <p>
-                        Dive into the fun with a pre-selected activity, for detailed information on departure times and activities, 
-                        please check in with the Travel Directors at the Hospitality Desk.
-                    </p>
-                </td>
-                <td>
-                    <h3>Farewell Reception and Dinner</h3>
-                    <p>
-                        Join friends, old and new, as we gather <em>near the Gazebo on Barefoot Beach</em> for a fun 
-                        Farewell Reception.
-                    </p>
-                </td>
-            </tr>
+            <!-- day 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Saturday, January 25
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" >
+                    <div class="accordion-body">
+                        <div class="row align-items-start">
+                            <div class="col-lg order-1">
+                                <h4>Morning</h4>
+                                <h5>Breakfast</h5>
+                                <p>Prepare for your travels over breakfast in the resort.</p>
+                            </div>
+                            <div class="col-lg order-2">
+                                <h4>Afternoon</h4>
+                                <h5>Resort Check-Out</h5>
+                                <p>Please settle your incidental account during checkout. Travel Directors will be on hand if you have any questions.</p>
+                            </div>
+                            <div class="col-lg order-3">
+                                <h4>Evening</h4>
+                                <h5>Departue</h5>
+                                <p>Bid farwell to Jamaica as you fly to your home city.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+    </div>
 
-            <tr>
-                <th>Saturday,<br />January 25</th>
-                <td>
-                    <h3>Breakast</h3>
-                    <p>
-                        Prepare for your travels over breakfast in the resort.
-                    </p>
-                </td>
-                <td>
-                    <h3>Resort Check-Out</h3>
-                    <p>
-                        Please settle your incidental account during checkout. Travel Directors will be on hand if you have any questions.
-                    </p>
-                </td>
-                <td>
-                    <h3>Departue</h3>
-                    <p>
-                        Bid farwell to Jamaica as you fly to your home city.
-                    </p>
-                </td>
-            </tr>
-        </tbody>
+    <!-- Footer -->
+    <div class="text-lg-start bg-light text-muted">
 
-        <tfoot>
+        <section class="">
+            <div class="container text-md-start pt-5">
+                <div class="row my-1">
 
-        </tfoot>
-    </table>
+                    <!-- Grid column 1 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto ">
+                        <h6 class="text-uppercase fw-bold mb-4 footer-col-header"><i class="fa fa-globe pe-2"></i>Worldwide Events</h6>
+                        <p>Let us help you choose the best way for you to explore Jamaica, experience and enjoy everything the island has to offer.</p>
+                    </div>
+                    
+                    <!-- Grid column 2 -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+                        <h6 class="text-uppercase fw-bold mb-4 footer-col-header"><a href="#home">Stand Out</a></h6>
+                        <p><a href="excursions.html" >Excursions</a></p>
+                        <p><a href="agenda.html" >Agenda</a></p>
+                        <p><a href="register.html">Register</a></p>
+                    </div>
 
-    
-    <footer>
-       <address>
-          Stand Out &#183; 
-          Travel Headquarters, St. Louis, MO &#183;
-          (555) 555-5555 <br />
-          <a href="mailto:llee139@my.stlcc.edu">jamaica2020@stand-out.com</a>
-       </address>
-    </footer>
- </body>
+                    <!-- Grid column 3 -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
+                        <h6 class="text-uppercase fw-bold mb-4 footer-col-header">Explore</h6>
+                        <p><a href="https://www.visitjamaica.com/" target="_blank">Jamaica</a></p>
+                        <p><a href="http://www.secretsresorts.com/en_us/resorts/jamaica/wild-orchid-montego-bay.html " target="_blank"">Secrets Wild Orchid</a></p>
+                        <p><a href="https://montego-bay-jamaica.com/" target="_blank">Montego Bay</a></p>
+                    </div>
+
+                    <!-- Grid column 4 -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
+                        <h6 class="text-uppercase fw-bold mb-4 footer-col-header">Contact</h6>
+                        <p><i class="fa fa-home pe-2"></i>Worldwide Events HQ</p>
+                        <p><i class="fa fa-envelope pe-2"></i><a href="mailto:leslie@doubleldesign.com">info@worldwideHQ.com</a></p>
+                        <p><i class="fa fa-phone pe-2"></i><a href="tel:414.515.2021">+ 01 414 515 2021</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <hr>
+        <div class="text-center p-4">© 2022 Copyright:<a class="text-reset fw-bold" href="https://www.doubleldesign.com/"> doubleLdesign</a></div>
+
+    </div>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
 
 </html>

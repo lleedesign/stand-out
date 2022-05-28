@@ -1,0 +1,33 @@
+
+.banner {
+    height: 400px;
+    padding: 0px;
+    position: relative
+}
+
+.banner-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.banner-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.banner-caption a {
+    color: rgba(255, 255, 255, 0.8); 
+}
+.banner-caption a:hover {
+    color: white;
+}
+
+.yaman {
+    max-width: 60%;
+    margin: auto;
+    display: block;
+}

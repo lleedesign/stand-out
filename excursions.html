@@ -1,83 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="Jamaica, trip, Caribbean, excursions" />
-    <title>Excursions</title>
-    <link href="jam_reset.css" rel="stylesheet" />
-    <link href="jam_nav.css" rel="stylesheet" />
-    <link href="jam_styles2.css" rel="stylesheet" />
-    <link href="favicon.png" rel="icon" type="image/x-icon" />
-</head>
+    <head>
+        <title>Excursions in Jamaica</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="Jamaica, trip, Caribbean, excursions" />
+        <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- font awesome (for icons) -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/excursions.css">
 
-<body>
-    <header>
-        <nav> 
-            <img src="jam_logo.png" class="headerlogo" alt="Stand Out Logo" />      
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="excursions.html">Excursions</a></li>
-                <li><a href="agenda.html">Agenda</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav> 
-        <img src="img_excursion_crop.jpg"  alt="woman snorkeling" />
-    </header>
+        <link href="img/favicon.png" rel="icon" type="image/x-icon" />
+    </head>
 
-    <div class="info">
-        <h1>Excursions</h1>
-        <section>
-            <img src="img_jeep.jpg" class="excurimg" alt="Jeep Safari Excursion" />
-            <div class="excurtext">
-                <h2 class="heading">Jeep Safari</h2>
-                <p>Hop in a zebra-striped 4X4 Land Rover with a personal guide and take a ride on the wild side. Drive deep into the mountains of Jamaica. 
-                    Walk along a tropical river. See lush foliage, flowers and wildlife you've never seen before. Discover hidden waterfalls and a natural 
-                    swimming pool just off the beaten path. Take the plunge. Enjoy the journey-- and the swim! </p>
+    <body id="excursions" data-spy="scroll" data-target=".navbar" data-offset="100">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <!-- TODO: link logo to top of page -->
+                <!-- TODO: make logo smaller when scrolling -->
+                <!-- TODO: move logo with left edge of body -->
+                <img src="img/jam_logo.png" class="headerlogo " alt="Stand Out Logo" />
+
+                <a class="navbar-brand" href="#"></a>
+                <!-- TODO: hamburger nav right justified -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end m-4" id="navbarNavAltMarkup">
+                    <div class="navbar-nav nav-top">
+                    <!-- TODO: add fun nav hover effect -->
+                    <a class="nav-item nav-link " href="index.html">Home</a>
+                    <a class="nav-item nav-link " href="#excursions">Excursions</a>
+                    <a class="nav-item nav-link " href="agenda.html">Agenda</a>
+                    <a href="register.html"><button type="button" class="btn btn-outline-light btn-lg" >Register</button></a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </nav>
+
+        <!-- jumbotron -->
+        <div class="container-fluid banner">
+            <img class="img-fluid banner-image" src="img/snorkle1.jpg"  alt="woman snorkeling" />
+            <figcaption class="banner-caption"><small>Photo by <a href="https://www.shutterstock.com/g/Dmosreg">Denis Moskvinov</a> on <a href="https://www.shutterstock.com/image-photo/happy-family-girl-snorkeling-mask-dive-598410023">shutterstock</a></small></figcaption>
+        </div>
+
+        <!-- CARDS -->
+        <!-- TODO: fix text spacing inside cards -->
+        <!-- TODO: add snorkling -->
+        <div class="container mt-4" >
+            <h1 class="text-uppercase pb-3 text-center text-warning">Explore all Jamaica has to offer</h1>
+
+            <div class="card mb-4">
+                <div class="row g-0">
+                <div class="col-md-5">
+                    <!-- TODO: look at img reponsive -->
+                    <img src="img/img_dunn.jpg" class="img-fluid rounded-start" alt="Dunn's River Falls Excursion">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h3 class="card-title">Dunn's River Falls</h3>
+                        <p class="card-text text-secondary">Put on your swimwear and take the scenic ride to Dunn&#39;s River Falls near Ocho Rios.</p>
+                        <p class="card-text text-secondary">The swift-flowing waterfalls cascade down more than 600 feet, as the Dunn River rushes from the mountains into the Caribbean. Climb the freshwater falls with the aid of a guide.</p>
+                        <p class="card-text text-secondary">Don't forget your water shoes!</p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        <a class="btn btn-outline-danger btn-md " href="https://www.dunnsriverfalls.net/" target="_blank">Start your climb here!</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="img/img_zip.jpg" class="img-fluid rounded-start" alt="Canopy Ziplining Excursion">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h3 class="card-title">Canopy Ziplining</h3>
+                        <p class="card-text text-secondary">Travel high above the Jamaican jungle from a series of decks and platforms. 
+                            Soar silently above the rainforest. Hear and see the rushing waters below, as you zip across a thousand-foot stretch of river 
+                            canyon at speeds of up to 35 miles per hour. Your guide &#8211; a certified specialist in tropical canopy exploration &#8211; will provide tips 
+                            about what to see and do during this amazing adventure. Let the fun begin!</p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        <a class="btn btn-outline-danger btn-md " href="https://ziplinejamaica.com/" target="_blank">Zip over there to schedule</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="img/img_horse.jpg" class="img-fluid rounded-start" alt="Horseback Ride & Swim Excursion">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h3 class="card-title">Horseback Ride & Swim</h3>
+                        <p class="card-text text-secondary">Saddle up for some of the best guided horseback riding in Jamaica. Take a spectacular journey on a well-trained horse, 
+                            ambling along panoramic cliff-side trails through a tropical rainforest and into the Jamaican countryside. But your ride isn&#39;t 
+                            over until you follow a special path down to the beach for a refreshing jaunt aboard your horse through the warm Caribbean surf.</p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        <a class="btn btn-outline-danger btn-md " href="https://jamaicacruiseexcursions.com/excursions/montego-bay-beach-horseback-riding/" target="_blank">Click to learn more, giddy-up!</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="card mb-5" >
+                <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="img/img_jeep.jpg" class="img-fluid rounded-start" alt="group of tourists riding in a jeep in the jungle">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h3 class="card-title">Jeep Safari</h3>
+                        <p class="card-text text-secondary">Hop in a zebra-striped 4X4 Land Rover with a personal guide and take a ride on the wild side. Drive deep into the mountains of Jamaica. 
+                            Walk along a tropical river. See lush foliage, flowers and wildlife you've never seen before. Discover hidden waterfalls and a natural 
+                            swimming pool just off the beaten path. Take the plunge. Enjoy the journey -- and the swim!</p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        <a class="btn btn-outline-danger btn-md " href="https://www.islandroutes.com/caribbean-tours/jamaica/1/montego-bay/" target="_blank">Ride around to island sights</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="text-lg-start bg-light text-muted">
+
+            <section class="">
+                <div class="container text-md-start pt-5">
+                    <div class="row my-1">
         
-        <section class="section-space">
-            <img src="img_zip.jpg" class="excurimg" alt="Canopy Ziplining Excursion" />
-            <div class="excurtext">
-                <h2 class="heading">Canopy Ziplining</h2>
-                <p>Travel high above the Jamaican jungle landscape from a series of decks and platforms by zipline and walkways. Soar like a bird, 
-                    gliding silently above the rainforest. Hear and see the rushing waters below, as you zip across a thousand-foot stretch of river 
-                    canyon at speeds of up to 35 miles per hour. Your guide – a certified specialist in tropical canopy exploration – will provide tips 
-                    about what to see and do during this amazing adventure. Let the fun begin!</p>
-            </div>
-        </section>
-        
-        <section class="section-space">
-            <img src="img_horse.jpg" class="excurimg" alt="Horseback Ride & Swim Excursion" />
-            <div class="excurtext">
-                <h2 class="heading">Horseback Ride & Swim</h2>
-                <p>Saddle up for some of the best guided horseback riding in Jamaica. Take a spectacular journey on a well-trained horse, 
-                    ambling along panoramic cliff-side trails through a tropical rainforest and into the Jamaican countryside. But your ride isn’t 
-                    over until you follow a special path down to the beach for a refreshing jaunt aboard your horse through the warm Caribbean surf.</p>
-            </div>
-        </section>
-        
-        <section class="section-space">
-            <img src="img_dunn.jpg" class="excurimg" alt="Dunn's River Falls Excursion" />
-            <div class="excurtext">
-                <h2 class="heading">Dunn's River Falls</h2>
-                <p>Put on your swimwear and take the scenic ride to Dunn’s River Falls near Ocho Rios.  The swift-flowing waterfalls cascade down more than 
-                    600 feet, as the Dunn River rushes from the mountains into the Caribbean. Climb the freshwater falls with the aid of a guide. Ready 
-                    for more beach time? Just stroll down to the shoreline to sunbathe and swim on a beach where they filmed a classic James Bond film. 
-                    (Yes! It was Dr. No.)</p>
-            </div>
-        </section>
-    </div>
+                        <!-- Grid column 1 -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto ">
+                            <h6 class="text-uppercase fw-bold mb-4 footer-col-header"><i class="fa fa-globe pe-2"></i>Worldwide Events</h6>
+                            <p>Let us help you choose the best way for you to explore Jamaica, experience and enjoy everything the island has to offer.</p>
+                        </div>
+                        
+                        <!-- Grid column 2 -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+                            <h6 class="text-uppercase fw-bold mb-4 footer-col-header"><a href="#home">Stand Out</a></h6>
+                            <p><a href="excursions.html" >Excursions</a></p>
+                            <p><a href="agenda.html" >Agenda</a></p>
+                            <p><a href="register.html">Register</a></p>
+                        </div>
+            
+                        <!-- Grid column 3 -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
+                            <h6 class="text-uppercase fw-bold mb-4 footer-col-header">Explore</h6>
+                            <p><a href="https://www.visitjamaica.com/" target="_blank">Jamaica</a></p>
+                            <p><a href="http://www.secretsresorts.com/en_us/resorts/jamaica/wild-orchid-montego-bay.html " target="_blank"">Secrets Wild Orchid</a></p>
+                            <p><a href="https://montego-bay-jamaica.com/" target="_blank">Montego Bay</a></p>
+                        </div>
+            
+                        <!-- Grid column 4 -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
+                            <h6 class="text-uppercase fw-bold mb-4 footer-col-header">Contact</h6>
+                            <p><i class="fa fa-home pe-2"></i>Worldwide Events HQ</p>
+                            <p><i class="fa fa-envelope pe-2"></i><a href="mailto:leslie@doubleldesign.com">info@worldwideHQ.com</a></p>
+                            <p><i class="fa fa-phone pe-2"></i><a href="tel:414.515.2021">+ 01 414 515 2021</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      
+            <!-- Copyright -->
+            <hr>
+            <div class="text-center p-4">© 2022 Copyright:<a class="text-reset fw-bold" href="https://www.doubleldesign.com/"> doubleLdesign</a></div>
+      
+        </div>
+        <!-- Footer -->
     
-    <footer>
-       <address>
-          Stand Out &#183; 
-          Travel Headquarters, St. Louis, MO &#183;
-          (555) 555-5555 <br />
-          <a href="mailto:llee139@my.stlcc.edu">jamaica2020@stand-out.com</a>
-       </address>
-    </footer>
- </body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    </body>
 
 </html>

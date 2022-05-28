@@ -1,0 +1,37 @@
+
+.banner {
+    /* background-image: url('../img/snorkle1.jpg');
+    background-size: cover; */
+    height: 482px; /* 600-118px navbar height */
+    position: relative;
+    padding: 0px;
+    margin-top: 118px;
+}
+
+@media (max-width: 991px) {
+    .banner {
+        margin-top: 56px;
+    }    
+}
+
+.banner-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* left-right position // top-bottom % */
+    object-position: 50% 50%;
+}
+
+.banner-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.banner-caption a {
+    color: rgba(255, 255, 255, 0.8); 
+}
+.banner-caption a:hover {
+    color: white;
+}
