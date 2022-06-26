@@ -12,22 +12,70 @@
     object-position: 68% 50%;
 }
 
-.banner-caption {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: rgba(255, 255, 255, 0.8);
-}
+/*----------- TEASER + HOVER -----------*/
 
-.banner-caption a {
-    color: rgba(255, 255, 255, 0.8);
-}
-.banner-caption a:hover {
-    color: white;
+
+.hover-1 {
+  color: white;
 }
 
 .teaser-text {
-    font-size: larger;
-    font-weight: 500;
-    letter-spacing: .75px;
+  color: white;
+  font-size: larger;
+  font-weight: 500;
+  letter-spacing: .75px;
+}
+
+/* palm tree image overlay in teaser area */
+/* .teaser-img {
+    display: flex;
+    justify-content: left;
+    width: 200px;
+      position: absolute;
+    mix-blend-mode: darken;
+    opacity: 0.5;
+} */
+
+
+/*------------------------------------*/
+
+/* logo container */
+.logo-container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 1100px) {
+
+  /* home page teaser hover */
+  .hover-1 {
+    --h: 1.2em;
+  
+    line-height: var(--h);
+    color: #0000; /* color is transparent to hide text */
+    text-shadow: /* shadow is a copy of text, with no blur/effects */
+      0 0 white, 
+      0 var(--h) #CE0E2D;
+    overflow: hidden;
+    /* transition: .3s; */
+    transition: .25s;
+  }
+  .hover-1:hover {
+    text-shadow: 
+      0 calc(-1 * var(--h)) white, 
+      0 0 #CE0E2D;
+  }
+
+  .teaser {
+      position: relative;
+  }
+  
 }

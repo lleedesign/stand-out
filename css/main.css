@@ -3,62 +3,108 @@
     background-color: #CE0E2D;
 }
 
+/*---------- ALL NAV LINKS ---------*/
 .nav-top a {
     font-size: x-large;
     text-transform: uppercase;
-    padding-left: 2rem !important;
     font-family: 'Viga', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
 }
 
 .nav-top a:hover {
     color: #ffc107 !important;
 }
 
+
+/*-------- REG BUTTON ONLY  -------*/
+
 .nav-top button {
     color: rgba(255, 255, 255, 0.5);
     font-size: x-large;
     text-transform: uppercase;
+    border: none;
 }
 
 .nav-top button:hover {
-    color: #CE0E2D;
+    color: orange !important;
 }
+
+.nav-top button:active {
+    color: #CE0E2D !important;
+}
+
+/*----------- LOGO -----------*/
+
+.headerlogo-link {
+    position: sticky;
+    /* position: relative; */
+    /* top: 24px;
+    left: 24px;  */
+    /* top: 2%;
+    left: 15%; */
+    z-index: 2000;
+}
+
+/* .headerlogo-container {
+    position: sticky;
+} */
 
 .headerlogo {
     width: 300px;
     position: absolute;
-    top: 15%;
+    top: 50%;
     left: 8%;
     transition: 1s ease;
 }
  
 .headerlogo:hover {
-    width: 400px;
+    width: 450px;
     position: absolute;
-    top: 25%;
-    left: 8%;
+    top: 50%;
+    left: 25%;
     transform: rotate(-13deg);
 }
 
-.figure-caption a {
-    color: gray !important;
+/*----------- BANNER FIG CAPTION -----------*/
+.banner-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.8);
 }
-.figure-caption a:hover {
-    color: black !important;
+
+.banner-caption a {
+    color: rgba(255, 255, 255, 0.8);
 }
+.banner-caption a:hover {
+    color: white;
+}
+
+/*----------- BANNER TEXTURE -----------*/
+
+/* .texture-white {
+    position: relative;
+} */
+
+/*--------------------------------------*/
 
 h1, h2, h3, h4 {
     font-family: 'Viga', sans-serif;
 }
 
-h2, h3, h4, a:hover {
+h2, h3, h4 {
     color: #CE0E2D;
 }
-
 
 a {
     text-decoration: none !important;
     color: gray;
+}
+
+a:hover {
+    color: #CE0E2D;
+    transition: color 0.2s ease-in-out 0s;
 }
 
 .footer-col-header, .footer-col-header a {
@@ -66,3 +112,78 @@ a {
     color: #CE0E2D;
 }
 
+.copyright {
+    padding-bottom: 45px !important;
+}
+
+/*----------- BUTTONS -----------*/
+
+.red-btn-animate {
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  .red-btn-animate span {
+    display: inline-block;
+    position: relative;
+    transition: 0.25s;
+  }
+  
+  .red-btn-animate span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.1s;
+  }
+  
+  .red-btn-animate:hover span {
+    padding-right: 25px;
+  }
+  
+  .red-btn-animate:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (max-width: 767px) {
+
+    .footer-col-header {
+        padding-top: 25px;
+        /* margin-bottom: -2px */
+    }
+    .footer-section>p {
+        /* margin-bottom: 10px; */
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .headerlogo {
+        width: 300px;
+        top: 35%;
+        left: 7%;
+    }
+}
+
+@media (max-width: 585px) {
+
+    .headerlogo {
+        width: 175px;
+        top: 20%;
+        left: 2%;
+    }
+    .headerlogo:hover {
+        width: 225px;
+        top: 25%;
+        left: 5%;
+        transform: rotate(-10deg);
+    }
+}

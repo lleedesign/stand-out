@@ -12,22 +12,71 @@
     object-position: 50% 50%;
 }
 
-.banner-caption {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.banner-caption a {
-    color: rgba(255, 255, 255, 0.8); 
-}
-.banner-caption a:hover {
-    color: white;
-}
-
 .yaman {
     max-width: 60%;
     margin: auto;
     display: block;
+}
+
+#register-form {
+    color: #6c757d; /* bootstrap "secondary" */
+}
+
+
+/* --------------------------------- */
+.btn-warning {
+    color: white;
+}
+
+.btn-warning:hover {
+    color: white;
+    background-color: orange;
+}
+
+.btn-warning, .btn-animate {
+    /* font-size: smaller; */
+    font-family: 'Viga', sans-serif;
+    text-transform: uppercase;
+}
+/* ----------- SUBMIT BUTTON ------------- */
+
+.btn-animate {
+    display: inline-block;
+    /* border-radius: 4px; */
+    /* background-color: #f4511e; */
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 23px;
+    /* padding: 10px; */
+    padding: 14px 10px 10px 10px;
+    width: 160px;
+    transition: all 0.5s;
+    /* cursor: pointer; */
+    /* margin: 5px; */
+  }
+  
+  .btn-animate span {
+    /* cursor: pointer; */
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-animate span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-animate:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn-animate:hover span:after {
+    opacity: 1;
+    right: 0;
 }

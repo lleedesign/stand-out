@@ -19,33 +19,46 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <!-- TODO: link logo to top of page -->
-            <!-- TODO: make logo smaller when scrolling -->
-            <!-- TODO: move logo with left edge of body -->
-            <img src="img/jam_logo.png" class="headerlogo " alt="Stand Out Logo" />
-
-            <a class="navbar-brand" href="#"></a>
-            <!-- TODO: hamburger nav right justified -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <div class="container justify-content-end">
+  
+        <!-- <a href="#home" class="headerlogo-link"><img src="img/jam_logo.png" class="headerlogo" alt="Stand Out Logo"/></a> -->
+  
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end m-4" id="navbarNavAltMarkup">
-                <div class="navbar-nav nav-top">
-                <!-- TODO: add fun nav hover effect -->
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="excursions.html">Excursions</a>
-                <a class="nav-item nav-link active" href="#agenda">Agenda</a>
-                <a href="register.html"><button type="button" class="btn btn-outline-light btn-lg" >Register</button></a>
-                </div>
+
+            <div class="collapse navbar-collapse m-4 justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav nav-top mb-lg-0">
+                    <li class="nav-item pe-3">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link" href="excursions.html">Excursions</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link active" aria-current="page" href="#agenda">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html"><button type="button" class="btn btn-outline-light btn-lg">Register</button></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
+
+    <div class="container headerlogo-container">
+        <a href="#home" class="container headerlogo-link">
+            <img src="img/jam_logo.png" class="headerlogo" alt="Stand Out Logo"/>
+        </a>
+    </div>
+
+
 
     <!-- jumbotron -->
     <div class="container-fluid banner">
         <img class="img-fluid banner-image" src="img/beads.jpg"  alt="beads from Jamaican market" />
         <figcaption class="banner-caption"><small>Photo by <a href="https://www.gettyimages.com/detail/photo/jewelry-compilation-royalty-free-image/178379981">mimialanjo</a> on <a href="https://www.gettyimages.com/detail/photo/jewelry-compilation-royalty-free-image/178379981">Getty Images</a></small></figcaption>
+        <!-- <img class="img-fluid texture-white" src="img/texture-orange.svg"  alt="banner image border texture" /> -->
     </div>
 
     <div class="container mb-5">
@@ -56,7 +69,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Wednesday, January 22
+                    DAY 1: Wednesday, January 22
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" >
@@ -86,7 +99,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Thursday, January 23
+                    DAY 2: Thursday, January 23
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" >
@@ -116,7 +129,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Friday, January 24
+                    DAY 3: Friday, January 24
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" >
@@ -146,7 +159,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Saturday, January 25
+                    DAY 4 (Final): Saturday, January 25
                     </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" >
@@ -178,36 +191,42 @@
     <!-- Footer -->
     <div class="text-lg-start bg-light text-muted">
 
-        <section class="">
+        <section>
             <div class="container text-md-start pt-5">
                 <div class="row my-1">
 
                     <!-- Grid column 1 -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto ">
-                        <h6 class="text-uppercase fw-bold mb-4 footer-col-header"><i class="fa fa-globe pe-2"></i>Worldwide Events</h6>
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto footer-section">
+                        <!-- <h6 class="text-uppercase fw-bold pb-2 footer-col-header"><i class="fa fa-globe pe-2"></i>Worldwide Events</h6> -->
+                        <h6 class="text-uppercase fw-bold pb-2 footer-col-header pe-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                            </svg>
+                            &nbsp;Worldwide Events
+                        </h6>
                         <p>Let us help you choose the best way for you to explore Jamaica, experience and enjoy everything the island has to offer.</p>
                     </div>
 
                     <!-- Grid column 2 -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
-                        <h6 class="text-uppercase fw-bold mb-4 footer-col-header"><a href="#home">Stand Out</a></h6>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto footer-section">
+                        <h6 class="text-uppercase fw-bold pb-2 footer-col-header"><a href="index.html">Stand Out</a></h6>
                         <p><a href="excursions.html" >Excursions</a></p>
-                        <p><a href="agenda.html" >Agenda</a></p>
+                        <p><a href="#agenda" >Agenda</a></p>
                         <p><a href="register.html">Register</a></p>
                     </div>
 
                     <!-- Grid column 3 -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
-                        <h6 class="text-uppercase fw-bold mb-4 footer-col-header">Explore</h6>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto footer-section">
+                        <h6 class="text-uppercase fw-bold pb-2 footer-col-header">Explore</h6>
                         <p><a href="https://www.visitjamaica.com/" target="_blank">Jamaica</a></p>
-                        <p><a href="http://www.secretsresorts.com/en_us/resorts/jamaica/wild-orchid-montego-bay.html " target="_blank"">Secrets Wild Orchid</a></p>
+                        <p><a href="http://www.secretsresorts.com/en_us/resorts/jamaica/wild-orchid-montego-bay.html " target="_blank">Secrets Wild Orchid</a></p>
                         <p><a href="https://montego-bay-jamaica.com/" target="_blank">Montego Bay</a></p>
                     </div>
 
                     <!-- Grid column 4 -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
-                        <h6 class="text-uppercase fw-bold mb-4 footer-col-header">Contact</h6>
-                        <p><i class="fa fa-home pe-2"></i>Worldwide Events HQ</p>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 footer-section">
+                        <h6 class="text-uppercase fw-bold pb-2 footer-col-header">Contact</h6>
+                        <p><i class="fa fa-home pe-2"><a href="https://www.doubleldesign.com/"></i>Worldwide Events HQ</a></p>
                         <p><i class="fa fa-envelope pe-2"></i><a href="mailto:leslie@doubleldesign.com">info@worldwideHQ.com</a></p>
                         <p><i class="fa fa-phone pe-2"></i><a href="tel:414.515.2021">+ 01 414 515 2021</a></p>
                     </div>
@@ -217,7 +236,7 @@
 
         <!-- Copyright -->
         <hr>
-        <div class="text-center p-4">© 2022 Copyright:<a class="text-reset fw-bold" href="https://www.doubleldesign.com/"> doubleLdesign</a></div>
+        <div class="text-center p-4 copyright">© 2022 Copyright:<a class="text-reset fw-bold" href="https://www.doubleldesign.com/"> doubleLdesign</a></div>
 
     </div>
     <!-- Footer -->

@@ -2,10 +2,10 @@
 .banner {
     /* background-image: url('../img/snorkle1.jpg');
     background-size: cover; */
-    height: 482px; /* 600-118px navbar height */
+    height: 520px; /* 600-116px navbar height */
     position: relative;
     padding: 0px;
-    margin-top: 118px;
+    margin-top: 80px;
 }
 
 @media (max-width: 991px) {
@@ -22,16 +22,21 @@
     object-position: 50% 50%;
 }
 
-.banner-caption {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: rgba(255, 255, 255, 0.8);
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* Rounded corners */
+@media (max-width: 1199px) {
+
+    .custom-round-corner {
+        border-radius: .25rem 0 0 0;
+    }
 }
 
-.banner-caption a {
-    color: rgba(255, 255, 255, 0.8); 
-}
-.banner-caption a:hover {
-    color: white;
+@media (max-width: 767px) {
+
+    .custom-round-corner {
+        border-radius: .25rem .25rem 0 0;
+    }
 }
